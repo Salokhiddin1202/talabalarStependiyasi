@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="1100.0" style="-fx-background-color: #c79f1b;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="434.0" layoutY="5.0" prefHeight="34.0" prefWidth="231.0" text="TUIT  Platform" textFill="#042320">
+               <font>
+                  <Font name="Algerian" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="554.0" prefWidth="211.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="554.0" prefWidth="210.0" style="-fx-background-color: #14ae9c;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="80.0" layoutX="62.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../../../../../../../icons8-person-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="39.0" layoutY="78.0" prefHeight="31.0" prefWidth="122.0" text="Welcome" textFill="#401919">
+                     <font>
+                        <Font name="Algerian" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="121.0" prefHeight="46.0" prefWidth="182.0" text="Makhsuna" textFill="#693f06">
+                     <font>
+                        <Font name="Arial Black" size="31.0" />
+                     </font>
+                  </Label>
+                  <Line endX="91.80000305175781" endY="-7.62939453125E-6" layoutX="96.0" layoutY="109.0" startX="-79.00001525878906" startY="-1.52587890625E-5" />
+                  <Button layoutX="10.0" layoutY="410.0" mnemonicParsing="false" onAction="#onBtnSearch" prefHeight="38.0" prefWidth="180.0" style="-fx-background-radius: 20 20 20 20;" text="Qidirish">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="354.0" mnemonicParsing="false" onAction="#onBtnDelete" prefHeight="38.0" prefWidth="180.0" style="-fx-background-radius: 20 20 20 20;" text="O'chirish">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="9.0" layoutY="514.0" mnemonicParsing="false" onAction="#onBtnClose" prefHeight="26.0" prefWidth="182.0" text="Chiqish">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="11.0" layoutY="249.0" mnemonicParsing="false" onAction="#onBtnSave" prefHeight="38.0" prefWidth="176.0" style="-fx-background-radius: 20 20 20 20;" text="Saqlash" textFill="#080606">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="300.0" mnemonicParsing="false" onAction="#onBtnUpdate" prefHeight="38.0" prefWidth="178.0" style="-fx-background-radius: 20 20 20 20;" text="Taxrirlash">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="554.4" prefWidth="888.8" style="-fx-background-color: #0e827a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="402.0" prefWidth="874.0">
+                     <children>
+                        <TableView prefHeight="407.0" prefWidth="874.0">
+                          <columns>
+                            <TableColumn fx:id="id" prefWidth="55.999953269958496" text="Id" />
+                            <TableColumn fx:id="ism" prefWidth="67.19998550415039" text="Ism" />
+                              <TableColumn fx:id="familiya" prefWidth="79.19998168945312" text="Familiya" />
+                              <TableColumn fx:id="guruh" prefWidth="92.79997253417969" text="Guruh" />
+                              <TableColumn fx:id="grantKontrak" prefWidth="94.39996337890625" text="Grant/Kontrak" />
+                              <TableColumn fx:id="prezident" prefWidth="91.199951171875" text="Prezident  S/p" />
+                              <TableColumn fx:id="rektor" prefWidth="77.60003662109375" text="Rektor  S/p" />
+                              <TableColumn prefWidth="99.99993896484375" text="Xorazmiy  S/p" fx:id="xorazmiy" />
+                              <TableColumn fx:id="registon" prefWidth="100.00006103515625" text="Registon  S/p" />
+                              <TableColumn fx:id="depozit" prefWidth="120.79998779296875" text="Depozit" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="tfId" layoutX="11.0" layoutY="440.0" prefHeight="24.0" prefWidth="150.0" promptText="Id">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfIsm" layoutX="185.0" layoutY="439.0" promptText="Ism" />
+                  <TextField fx:id="tfFamiliya" layoutX="369.0" layoutY="439.0" promptText="Familiya" />
+                  <TextField fx:id="tfGuruh" layoutX="554.0" layoutY="439.0" promptText="Guruh" />
+                  <TextField fx:id="tfGrantKontrak" layoutX="724.0" layoutY="439.0" promptText="Grant/Kontrak" />
+                  <TextField fx:id="tfPrezident" layoutX="10.0" layoutY="488.0" promptText="Prezident S/p" />
+                  <TextField fx:id="tfRektor" layoutX="183.0" layoutY="489.0" promptText="Rektor  S/p">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfXorazmiy" layoutX="369.0" layoutY="488.0" promptText="Xorazmiy  S/p" />
+                  <TextField fx:id="tfRegiston" layoutX="554.0" layoutY="488.0" promptText="Registon S/p" />
+                  <TextField fx:id="tfDepozit" layoutX="722.0" layoutY="489.0" promptText="Depozit">
+                     <font>
+                        <Font name="Bodoni MT" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
